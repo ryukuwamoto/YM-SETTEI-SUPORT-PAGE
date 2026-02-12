@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "GenJyuuGothic";
+  src: url("https://gigaplus.makeshop.jp/yemoba4818/YM-articlesaite/font/GenJyuuGothic-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GenJyuuGothic";
+  src: url("https://gigaplus.makeshop.jp/yemoba4818/YM-articlesaite/font/GenJyuuGothic-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GenJyuuGothic";
+  src: url("https://gigaplus.makeshop.jp/yemoba4818/YM-articlesaite/font/GenJyuuGothic-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MOBO";
+  src: url("https://gigaplus.makeshop.jp/yemoba4818/YM-articlesaite/font/MOBO-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MOBO";
+  src: url("https://gigaplus.makeshop.jp/yemoba4818/YM-articlesaite/font/MOBO-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "GenJyuuGothic", sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+
+.wrap-wide {
+  position: relative;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.sec-top-a {
+  position: relative;
+  height: auto;
+  text-align: center;
+}
+.sec-top-a .a-left-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+.sec-top-a .a-right-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.top-title {
+  padding-top: 55px;
+}
+.top-title .title-logo {
+  display: block;
+  height: auto;
+  width: 138px;
+  margin: 0 auto 15px;
+}
+.top-title strong {
+  font-family: "MOBO", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+.top-title p:nth-child(1) {
+  font-family: "MOBO", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 14px 0 20px;
+}
+.top-title p:nth-child(2) {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1.44px;
+  padding-bottom: 30px;
+}
+
+.sec-top-b {
+  position: relative;
+  text-align: center;
+  height: 1547px;
+  width: 100vw;
+  background: url("https://gigaplus.makeshop.jp/yemoba4818/settei-suport/image/sec-top-b/background.png") no-repeat center/cover;
+}
+
+.pailing1-wrap {
+  padding: 70px 0 40px;
+}
+.pailing1-wrap .sec-b-paling1 {
+  display: inline-block;
+  background-color: #808080;
+  border-radius: 9999px;
+}
+.pailing1-wrap .sec-b-paling1 p {
+  font-family: "MOBO", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  padding: 12px 50px;
+}
+
+.b-window-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.b-window-wrap .b-window {
+  position: relative;
+  width: 100%;
+  height: 165px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.b-window-wrap .b-window p:nth-child(1) {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 0 0;
+}
+.b-window-wrap .b-window p:nth-child(2) {
+  font-weight: 700;
+  font-size: 22px;
+}
+.b-window-wrap .b-window img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0.5);
+          transform: translateX(-50%) scale(0.5);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+.b-speach-bubble {
+  padding-top: 50px;
+  height: auto;
+  width: 280px;
+}/*# sourceMappingURL=style.css.map */
