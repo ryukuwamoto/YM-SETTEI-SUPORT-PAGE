@@ -37,6 +37,15 @@ body {
   font-family: "GenJyuuGothic", sans-serif;
   font-weight: 500;
   color: #000;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .wrap-wide {
@@ -171,9 +180,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  padding: 10px 0;
 }
 .b-middle-read p:nth-child(1) {
   font-family: MOBO;
@@ -184,6 +191,7 @@ body {
   font-family: MOBO;
   font-weight: 700;
   font-size: 20px;
+  padding: 9px 0 0 3px;
 }
 .b-middle-read p:nth-child(3) {
   font-family: MOBO;
@@ -193,9 +201,190 @@ body {
 .b-middle-read p:nth-child(4) {
   font-weight: 700;
   font-size: 18px;
+  padding-top: 20px;
 }
 .b-middle-read img {
-  display: inline;
-  height: auto;
+  height: 28px;
   width: 209px;
+}
+
+.b-middle-window {
+  position: relative;
+  height: 334px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.b-middle-window:nth-child(1) {
+  border: 2px solid #ffe100;
+}
+.b-middle-window:nth-child(1) .bmw-read div {
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  background: rgba(255, 225, 0, 0.5);
+}
+.b-middle-window:nth-child(1) .bmw-read div p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  padding: 9px 40px 9px 54px;
+}
+.b-middle-window:nth-child(1) .bmw-under-read {
+  background: #FFE100;
+}
+.b-middle-window:nth-child(2) {
+  border: 2px solid #f4a000;
+}
+.b-middle-window:nth-child(2) .bmw-read div {
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  background: rgba(244, 160, 0, 0.5);
+}
+.b-middle-window:nth-child(2) .bmw-read div p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  padding: 9px 22px 9px 40px;
+}
+.b-middle-window:nth-child(2) .bmw-under-read {
+  background: #f4a000;
+}
+
+.bmw-read {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 44px 0;
+}
+.bmw-read img {
+  position: relative;
+  height: 85px;
+  width: 85px;
+  margin-right: -33px;
+}
+
+.bmw-under-read {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.bmw-under-read p:nth-child(1) {
+  font-family: MOBO;
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 14px;
+}
+.bmw-under-read p:nth-child(2) {
+  font-family: MOBO;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 6px 0 5px;
+}
+.bmw-under-read img {
+  height: 12px;
+  width: 11px;
+}
+
+.bmw-left-image {
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0.5);
+          transform: translateX(-50%) scale(0.5);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  z-index: 1;
+}
+
+.bmw-right-image {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0.5);
+          transform: translateX(-50%) scale(0.5);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  z-index: 1;
+}
+
+.b-under-read div {
+  position: relative;
+  display: inline-block;
+}
+.b-under-read div p {
+  font-family: MOBO;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 45px 0 20px;
+}
+.b-under-read div img {
+  position: absolute;
+  top: 20px;
+  right: -71px;
+  height: 65px;
+  width: 65px;
+}
+.b-under-read p {
+  padding-bottom: 20px;
+}
+
+.b-speach-bubble2 {
+  height: 108px;
+  width: 390px;
+}
+
+.sec-top-c {
+  position: relative;
+  height: 639px;
+  background-color: #fff;
+}
+.sec-top-c .a-left-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+.sec-top-c .a-right-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.c-wrap-wide {
+  position: relative;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.c-wrap-height {
+  padding: 120px 0 100px;
+}
+
+.c-big-read {
+  padding: 40px 0;
+}
+.c-big-read h2 {
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.c-main-read p {
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

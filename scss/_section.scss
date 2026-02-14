@@ -126,7 +126,7 @@
     h2 {
         display: flex;
         justify-content: center;
-        align-items: baseline;
+        padding: 10px 0;
     }
     p:nth-child(1) {
         font-family: MOBO;
@@ -137,6 +137,7 @@
         font-family: MOBO;
         font-weight: 700;
         font-size: 20px;
+        padding: 9px 0 0 3px;
     }
     p:nth-child(3) {
         font-family: MOBO;
@@ -146,10 +147,191 @@
     p:nth-child(4) {
         font-weight: 700;
         font-size: 18px;
+        padding-top: 20px;
     }
     img {
-        display: inline;
-        height: auto;
+        height: 28px;
         width: 209px;
+    }
+}
+
+.b-middle-window {
+    position: relative;
+    height: 334px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    &:nth-child(1) {
+        border: 2px solid #ffe100;
+        .bmw-read {
+            div {
+                height: auto;
+                width: auto;
+                border-radius: 10px;
+                background: rgba(255, 225, 0, 0.50);            
+                p {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 21px;
+                    padding: 9px 40px 9px 54px;
+                }
+            }
+        }
+        .bmw-under-read {
+            background: #FFE100;;
+        }
+    }
+    &:nth-child(2) {
+        border: 2px solid #f4a000;
+        .bmw-read {
+            div {
+                height: auto;
+                width: auto;
+                border-radius: 10px;
+                background: rgba(244, 160, 0, 0.50);            
+                p {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 21px;
+                    padding: 9px 22px 9px 40px;
+                }
+            }
+        }
+        .bmw-under-read {
+        background: #f4a000;
+        }
+    }
+}
+
+.bmw-read {
+    display: flex;
+    align-items: center;
+    padding: 15px 44px 0;
+    img {
+        position: relative;
+        height: 85px;
+        width: 85px;
+        margin-right: -33px;
+    }
+}
+
+.bmw-under-read {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    p:nth-child(1) {
+        font-family: MOBO;
+        font-weight: 600;
+        font-size: 14px;
+        padding-top: 14px;
+    }
+    p:nth-child(2) {
+        font-family: MOBO;
+        font-weight: 700;
+        font-size: 22px;
+        padding: 6px 0 5px;
+    }
+    img {
+        height: 12px;
+        width: 11px;
+    }
+}
+
+.bmw-left-image {
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+    transform-origin: bottom center;
+    z-index: 1;
+}
+
+.bmw-right-image {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+    transform-origin: bottom center;
+    z-index: 1;
+}
+
+.b-under-read {
+    div {
+        position: relative;
+        display: inline-block;
+        p {
+            font-family: MOBO;
+            font-size: 26px;
+            font-weight: 700;
+            padding: 45px 0 20px;
+        }
+        img {
+            position: absolute;
+            top: 20px;
+            right: -71px;
+            height: 65px;
+            width: 65px;
+        }
+    }
+    p {
+        padding-bottom: 20px;
+    }
+}
+
+.b-speach-bubble2 {
+    height: 108px;
+    width: 390px;
+}
+
+
+
+// sec-top-c
+.sec-top-c {
+    position: relative;
+    height: 639px;
+    background-color: #fff;
+    .a-left-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(0.5);
+        transform-origin: top left;
+    }
+    .a-right-image {
+        position: absolute;
+        bottom: 0;
+        right: 0
+        ;
+        transform: scale(0.5);
+        transform-origin: bottom right;
+    }
+}
+
+.c-wrap-wide {
+    position: relative;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.c-wrap-height {
+    padding: 120px 0 100px;
+}
+
+.c-big-read {
+    padding: 40px 0;
+    h2 {
+        font-weight: 900;
+        font-size: 22px; 
+    }
+}
+
+.c-main-read {
+    p {
+        font-size: 18px;
     }
 }
