@@ -335,3 +335,42 @@
         font-size: 18px;
     }
 }
+
+
+
+// sec-top-d
+.sec-top-d {
+    background-color: #FFF9CC;
+}
+
+.d-wrap-wide {
+    padding: 100px 0 134px;
+}
+
+.line-touroku {
+    height: auto;
+    width: 100%;
+}
+
+.slider-window-wrap {
+    position: relative;
+    height: 674px;
+    border-radius: 10px;
+    margin-top: 150px;
+    &:nth-child(2) {
+        background-color: #FFE100;
+    }
+    &:nth-child(3) {
+        background-color: #f4a000;
+        margin-bottom: 134px;
+    }
+}
+
+.d-icon {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    height: 120px;
+    width: 120px;
+    transform: translateX(-50%);
+}

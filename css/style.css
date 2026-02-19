@@ -1,3 +1,7 @@
+/*
+Theme Name: Yellow mobile suport page
+Author: Kuwamoto Ryu
+*/
 @font-face {
   font-family: "GenJyuuGothic";
   src: url("https://gigaplus.makeshop.jp/yemoba4818/YM-articlesaite/font/GenJyuuGothic-Heavy.ttf") format("truetype");
@@ -387,4 +391,41 @@ body {
 
 .c-main-read p {
   font-size: 18px;
+}
+
+.sec-top-d {
+  background-color: #FFF9CC;
+}
+
+.d-wrap-wide {
+  padding: 100px 0 134px;
+}
+
+.line-touroku {
+  height: auto;
+  width: 100%;
+}
+
+.slider-window-wrap {
+  position: relative;
+  height: 674px;
+  border-radius: 10px;
+  margin-top: 150px;
+}
+.slider-window-wrap:nth-child(2) {
+  background-color: #FFE100;
+}
+.slider-window-wrap:nth-child(3) {
+  background-color: #f4a000;
+  margin-bottom: 134px;
+}
+
+.d-icon {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  height: 120px;
+  width: 120px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
