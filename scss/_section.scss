@@ -129,18 +129,18 @@
         padding: 10px 0;
     }
     p:nth-child(1) {
-        font-family: MOBO;
+        font-family: 'MOBO';
         font-weight: 700;
         font-size: 20px;
     }
     p:nth-child(2) {
-        font-family: MOBO;
+        font-family: 'MOBO';
         font-weight: 700;
         font-size: 20px;
         padding: 9px 0 0 3px;
     }
     p:nth-child(3) {
-        font-family: MOBO;
+        font-family: 'MOBO';
         font-weight: 700;
         font-size: 30px;
     }
@@ -225,13 +225,13 @@
     text-align: center;
     z-index: 2;
     p:nth-child(1) {
-        font-family: MOBO;
+        font-family: 'MOBO';
         font-weight: 600;
         font-size: 14px;
         padding-top: 14px;
     }
     p:nth-child(2) {
-        font-family: MOBO;
+        font-family: 'MOBO';
         font-weight: 700;
         font-size: 22px;
         padding: 6px 0 5px;
@@ -265,7 +265,7 @@
         position: relative;
         display: inline-block;
         p {
-            font-family: MOBO;
+            font-family: 'MOBO';
             font-size: 26px;
             font-weight: 700;
             padding: 45px 0 20px;
@@ -354,7 +354,7 @@
 
 .slider-window-wrap {
     position: relative;
-    height: 674px;
+    height: auto;
     border-radius: 10px;
     margin-top: 150px;
     &:nth-child(2) {
@@ -373,4 +373,97 @@
     height: 120px;
     width: 120px;
     transform: translateX(-50%);
+}
+
+.d-top-read {
+    text-align: center;
+    padding: 90px 0 20px;
+    p {
+        font-family: 'MOBO';
+        font-size: 18px;
+        font-weight: 600;
+    }
+    h3 {
+        font-family: 'MOBO';
+        font-size: 26px;
+        font-weight: 700;
+        padding: 10px 0 20px;
+    }
+}
+
+.slider-inner-wrap {
+    height: 402px;
+    padding-bottom: 64px;
+}
+
+
+
+// sec-top-e
+.sec-top-e {
+    position: relative;
+    text-align: center;
+}
+
+.e-background {
+    position: absolute;
+    top: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: auto;
+}
+
+.medal {
+    position: relative;
+    width: 105px;
+    height: auto;
+    top: -24px;
+}
+
+.e-top-read {
+    margin-top: -24px;
+    padding: 0 0 59px;
+    p {
+        font-family: 'MOBO';
+        font-size: 18px;
+        font-weight: 600;
+    }
+    h3 {
+        font-family: 'MOBO';
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 28px;
+        padding-top: 10px;
+    }
+}
+
+.e-window-wrap {
+    display: flex;
+    gap: 20px;
+}
+
+.e-window {
+    position: relative;
+    height: 305px;
+    width: 100%;
+    border: 2px solid #FFE100;
+    border-radius: 10px;
+    align-items: center;
+    .ew-top-read {
+        position: absolute;
+        background-color: #ffe100;
+        border-radius: 18px;
+        top: -19px;
+        left: 50%;
+        transform: translateX(-50%);
+        p {
+            font-size: 18px;
+            font-weight: 900;
+            padding: 5px 24px;
+        }
+    }
+    img {
+        transform: scale(0.5);
+        transform-origin: top center;
+    }
 }

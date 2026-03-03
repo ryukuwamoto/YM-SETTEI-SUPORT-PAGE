@@ -1,5 +1,5 @@
 /*
-Theme Name: Yellow mobile suport page
+Theme Name: Yellow mobile article site
 Author: Kuwamoto Ryu
 */
 @font-face {
@@ -187,18 +187,18 @@ body {
   padding: 10px 0;
 }
 .b-middle-read p:nth-child(1) {
-  font-family: MOBO;
+  font-family: "MOBO";
   font-weight: 700;
   font-size: 20px;
 }
 .b-middle-read p:nth-child(2) {
-  font-family: MOBO;
+  font-family: "MOBO";
   font-weight: 700;
   font-size: 20px;
   padding: 9px 0 0 3px;
 }
 .b-middle-read p:nth-child(3) {
-  font-family: MOBO;
+  font-family: "MOBO";
   font-weight: 700;
   font-size: 30px;
 }
@@ -283,13 +283,13 @@ body {
   z-index: 2;
 }
 .bmw-under-read p:nth-child(1) {
-  font-family: MOBO;
+  font-family: "MOBO";
   font-weight: 600;
   font-size: 14px;
   padding-top: 14px;
 }
 .bmw-under-read p:nth-child(2) {
-  font-family: MOBO;
+  font-family: "MOBO";
   font-weight: 700;
   font-size: 22px;
   padding: 6px 0 5px;
@@ -326,7 +326,7 @@ body {
   display: inline-block;
 }
 .b-under-read div p {
-  font-family: MOBO;
+  font-family: "MOBO";
   font-size: 26px;
   font-weight: 700;
   padding: 45px 0 20px;
@@ -408,7 +408,7 @@ body {
 
 .slider-window-wrap {
   position: relative;
-  height: 674px;
+  height: auto;
   border-radius: 10px;
   margin-top: 150px;
 }
@@ -428,4 +428,102 @@ body {
   width: 120px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.d-top-read {
+  text-align: center;
+  padding: 90px 0 20px;
+}
+.d-top-read p {
+  font-family: "MOBO";
+  font-size: 18px;
+  font-weight: 600;
+}
+.d-top-read h3 {
+  font-family: "MOBO";
+  font-size: 26px;
+  font-weight: 700;
+  padding: 10px 0 20px;
+}
+
+.slider-inner-wrap {
+  height: 402px;
+  padding-bottom: 64px;
+}
+
+.sec-top-e {
+  position: relative;
+  text-align: center;
+}
+
+.e-background {
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 230px;
+  height: auto;
+}
+
+.medal {
+  position: relative;
+  width: 105px;
+  height: auto;
+  top: -24px;
+}
+
+.e-top-read {
+  margin-top: -24px;
+  padding: 0 0 59px;
+}
+.e-top-read p {
+  font-family: "MOBO";
+  font-size: 18px;
+  font-weight: 600;
+}
+.e-top-read h3 {
+  font-family: "MOBO";
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-top: 10px;
+}
+
+.e-window-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.e-window {
+  position: relative;
+  height: 305px;
+  width: 100%;
+  border: 2px solid #FFE100;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.e-window .ew-top-read {
+  position: absolute;
+  background-color: #ffe100;
+  border-radius: 18px;
+  top: -19px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.e-window .ew-top-read p {
+  font-size: 18px;
+  font-weight: 900;
+  padding: 5px 24px;
+}
+.e-window img {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
 }/*# sourceMappingURL=style.css.map */
