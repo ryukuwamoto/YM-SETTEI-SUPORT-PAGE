@@ -1,0 +1,19 @@
+// sec-d-slider
+.slider {
+    display: block;
+  width: calc(100% - 40px);
+  height: auto;
+  margin: 0 auto;
+}
+.slick-img {
+    box-sizing: border-box;
+    padding: 0 15px;
+    .slide-content {
+        background-color: white;
+        height: 402px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 10px;
+}
+}
