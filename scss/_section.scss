@@ -2,8 +2,9 @@
 
 .wrap-wide {
     position: relative;
-    max-width: 1030px;
+    max-width: 1070px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 
@@ -60,12 +61,20 @@
 
 
 // sec-top-b
-.sec-top-b {
+.sec-top-b1 {
     position: relative;
     text-align: center;
-    height: 1547px;
+    height: auto;
     width: 100vw;
-    background: url('https://gigaplus.makeshop.jp/yemoba4818/settei-suport/image/sec-top-b/background.png') no-repeat center / cover;
+    background-color: #9BE9BB;
+}
+
+.sec-top-b2 {
+    position: relative;
+    text-align: center;
+    height: auto;
+    width: 100vw;
+    background-color: #FFF9CC;
 }
 
 .pailing1-wrap {
@@ -115,18 +124,53 @@
     }
 }
 
+.res1 {
+    @media (max-width: 704px) {
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+        gap: 40px;
+        .b-window {
+            height: 78px;
+            padding: 0 30px;
+            text-align: left;
+            img {
+                right: 30px;
+                left: auto;
+            transform: translateX(0) scale(0.5);
+            transform-origin: bottom right;
+            }
+            &:nth-of-type(2) {
+                text-align: right;
+                img {
+                    left: 30px;
+                    transform: translateX(0) scale(0.5);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+    }
+}
+
 .b-speach-bubble {
     padding-top: 50px;
     height: auto;
-    width: 280px;   
+    width: 280px;
+    @media (max-width: 800px) {
+        padding-top: 39px;
+    }
 }
 
 .b-middle-read {
-    margin: 145px 0 20px;
+    padding: 170px 0 20px;
     h2 {
         display: flex;
         justify-content: center;
         padding: 10px 0;
+        img {
+            width: 209px;
+            height: auto;
+        }
     }
     p:nth-child(1) {
         font-family: 'MOBO';
@@ -149,10 +193,28 @@
         font-size: 18px;
         padding-top: 20px;
     }
-    img {
-        height: 28px;
-        width: 209px;
+    @media (max-width: 800px) {
+        padding: 130px 0 55px;
     }
+}
+
+.bww-outer {
+    position: relative;
+    width: 100%;
+    .bmw-icon {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform-origin: top center;
+        transform:translateX(calc(-50% - 98px)) scale(0.5);
+        z-index: 10;
+        @media(max-width: 800px){
+        top: -43px;
+        left: 50%;
+        transform: translateX(-50%) scale(0.5);
+        }
+    }
+
 }
 
 .b-middle-window {
@@ -162,7 +224,8 @@
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
-    &:nth-child(1) {
+}
+    .style1 {
         border: 2px solid #ffe100;
         .bmw-read {
             div {
@@ -175,6 +238,11 @@
                     font-weight: 700;
                     line-height: 21px;
                     padding: 9px 40px 9px 54px;
+                    @media (max-width: 800px) {
+                        font-size: 12px;
+                        padding: 7px 10px 5px;
+                        line-height: normal;
+                    }
                 }
             }
         }
@@ -182,7 +250,7 @@
             background: #FFE100;;
         }
     }
-    &:nth-child(2) {
+    .style2 {
         border: 2px solid #f4a000;
         .bmw-read {
             div {
@@ -195,24 +263,26 @@
                     font-weight: 700;
                     line-height: 21px;
                     padding: 9px 22px 9px 40px;
+                    @media (max-width: 800px) {
+                        font-size: 12px;
+                        padding: 7px 10px 5px;
+                        line-height: normal;
+                    }
                 }
             }
         }
         .bmw-under-read {
         background: #f4a000;
         }
-    }
-}
+    } 
+
 
 .bmw-read {
-    display: flex;
-    align-items: center;
-    padding: 15px 44px 0;
-    img {
-        position: relative;
-        height: 85px;
-        width: 85px;
-        margin-right: -33px;
+    padding: 27px 46px 0 98px;
+    @media (max-width: 800px) {
+        padding: 62px 15px 0;
+        display: inline-block;
+        margin: 0 auto;
     }
 }
 
@@ -229,6 +299,10 @@
         font-weight: 600;
         font-size: 14px;
         padding-top: 14px;
+        @media (max-width: 800px) {
+            padding-top: 15px;
+            font-size: 13px;
+        }
     }
     p:nth-child(2) {
         font-family: 'MOBO';
@@ -249,6 +323,10 @@
     transform: translateX(-50%) scale(0.5);
     transform-origin: bottom center;
     z-index: 1;
+    @media (max-width: 800px) {
+        transform: translateX(-50%) scale(0.4);
+        bottom: 30px;
+    }
 }
 
 .bmw-right-image {
@@ -258,6 +336,10 @@
     transform: translateX(-50%) scale(0.5);
     transform-origin: bottom center;
     z-index: 1;
+    @media (max-width: 800px) {
+        transform: translateX(-50%) scale(0.4);
+        bottom: 60px;
+    }
 }
 
 .b-under-read {
@@ -281,11 +363,19 @@
     p {
         padding-bottom: 20px;
     }
+    @media (max-width: 800px) {
+        padding: 0 15px;
+    }
 }
 
 .b-speach-bubble2 {
     height: 108px;
     width: 390px;
+    margin-bottom: 60px;
+    @media (max-width: 600px) {
+        height: 94px;
+        width: 340px;
+    }
 }
 
 
@@ -316,10 +406,17 @@
     position: relative;
     max-width: 550px;
     margin: 0 auto;
+    @media (max-width: 748px) {
+        max-width: 300px;
+    }
+    
 }
 
 .c-wrap-height {
     padding: 120px 0 100px;
+    @media (max-width: 748px) {
+        padding: 112px 0 110px;
+    }
 }
 
 .c-big-read {
@@ -439,12 +536,18 @@
 .e-window-wrap {
     display: flex;
     gap: 20px;
+    padding-bottom: 134px;
+    @media (max-width: 900px) {
+        width: 400px;
+        margin: 0 auto;
+        flex-direction: column;
+
+    }
 }
 
 .e-window-outer {
     height: auto;
     width: 100%;
-    padding-bottom: 134px;
     .ew-top-read {
         position: relative;
         z-index: 10;
@@ -537,6 +640,13 @@
 
 .f-slider-wrap {
     padding-bottom: 60px;
+    @media (max-width: 1070px) {
+        width: 680px;
+        margin: 0 auto;
+    }
+    @media (max-width: 748px) {
+        width: 330px;
+    }
 }
 
 
