@@ -28,7 +28,7 @@ $(function () {
 
 $(function () {
   $(".f-slider").slick({
-    autoplay: false,
+    autoplay: true,
     dots: true,
     variableWidth: true,
     prevArrow: '<img src="https://gigaplus.makeshop.jp/yemoba4818/settei-suport/image/sec-top-f/f-arrow.png" class="slide-arrow prev-arrow">',

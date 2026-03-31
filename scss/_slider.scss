@@ -2,7 +2,7 @@
 .d1-slider, .d2-slider {
   position: relative;
   display: block;
-  width: calc(100% - 40px);
+  width: 100%;
   height: auto;
   margin: 0 auto;
 
@@ -29,6 +29,10 @@
   .slide, .slick-slide {
     padding: 0 15px;
     width: 430px;
+    @media (max-width: 748px) {
+      padding: 0 10px;
+      width: 330px;
+    }
 
     .slide-content {
       position: relative;
@@ -39,6 +43,9 @@
       text-align: center;
       opacity: 0.5;
       transition: opacity 0.5s;
+      @media (max-width: 600px) {
+        opacity: 1;
+      }
 
       img {
         position: absolute;
