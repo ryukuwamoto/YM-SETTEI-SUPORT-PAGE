@@ -67,6 +67,7 @@ ul {
   position: relative;
   height: auto;
   text-align: center;
+  overflow: hidden;
 }
 .sec-top-a .a-left-image {
   position: absolute;
@@ -133,6 +134,7 @@ ul {
   height: auto;
   width: 100vw;
   background-color: #9BE9BB;
+  overflow: hidden;
 }
 .sec-top-b1 .b-background {
   position: absolute;
@@ -156,8 +158,18 @@ ul {
   height: auto;
   width: 100vw;
   background-color: #FFF9CC;
+  overflow: hidden;
 }
-
+.sec-top-b2 .b-background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0.5);
+          transform: translateX(-50%) scale(0.5);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  z-index: 10;
+}
 .pailing1-wrap {
   padding: 70px 0 40px;
 }
@@ -504,6 +516,7 @@ ul {
 .sec-top-c {
   position: relative;
   background-color: #fff;
+  overflow: hidden;
 }
 .sec-top-c .a-left-image {
   position: absolute;
@@ -585,6 +598,7 @@ ul {
 
 .sec-top-d {
   background-color: #FFF9CC;
+  overflow: hidden;
 }
 
 @media (max-width: 748px) {
@@ -710,6 +724,7 @@ ul {
 .sec-top-e {
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 
 .e-background {
@@ -843,6 +858,7 @@ ul {
   position: relative;
   text-align: center;
   background-color: #9BE9BB;
+  overflow: hidden;
 }
 
 .f-background {
@@ -890,6 +906,7 @@ ul {
 .g-outer {
   text-align: center;
   padding: 50px 0;
+  overflow: hidden;
 }
 .g-outer .g-read p:nth-of-type(1) {
   font-family: "MOBO";
@@ -916,6 +933,7 @@ ul {
 .sec-top-h {
   background-color: #F0F0F0;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 
 .top_h_tit {

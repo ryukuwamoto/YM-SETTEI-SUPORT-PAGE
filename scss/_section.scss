@@ -14,6 +14,7 @@
     position: relative;
     height: auto;
     text-align: center;
+    overflow: hidden;
     .a-left-image {
         position: absolute;
         top: 0;
@@ -78,6 +79,7 @@
     height: auto;
     width: 100vw;
     background-color: #9BE9BB;
+    overflow: hidden;
     .b-background {
         position: absolute;
         bottom: -110px;
@@ -97,6 +99,18 @@
     height: auto;
     width: 100vw;
     background-color: #FFF9CC;
+    overflow: hidden;
+    .b-background {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scale(0.5);
+        transform-origin: top center;
+        z-index: 10;
+        @media (max-width: 800px) {
+            
+        }
+    }
 }
 
 .pailing1-wrap {
@@ -408,6 +422,7 @@
 .sec-top-c {
     position: relative;
     background-color: #fff;
+    overflow: hidden;
     .a-left-image {
         position: absolute;
         top: 0;
@@ -487,6 +502,7 @@
 // sec-top-d
 .sec-top-d {
     background-color: #FFF9CC;
+    overflow: hidden;
 }
 
 .d-wrap-sp {
@@ -602,6 +618,7 @@
 .sec-top-e {
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 
 .e-background {
@@ -716,6 +733,7 @@
     position: relative;
     text-align: center;
     background-color: #9BE9BB;
+    overflow: hidden;
 }
 
 .f-background {
@@ -760,6 +778,7 @@
 .g-outer {
     text-align: center;
     padding: 50px 0;
+    overflow: hidden;
     .g-read {
         p:nth-of-type(1) {
             font-family: "MOBO";
@@ -792,6 +811,7 @@
 .sec-top-h {
     background-color: #F0F0F0;
     padding-bottom: 60px;
+    overflow: hidden;
 }
 
 .top_h_tit {
