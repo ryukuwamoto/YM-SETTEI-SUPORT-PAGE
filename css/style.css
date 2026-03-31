@@ -89,10 +89,14 @@ ul {
 }
 @media (max-width: 748px) {
   .sec-top-a .a-left-image {
-    left: -50px;
+    left: -40px;
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
   }
   .sec-top-a .a-right-image {
-    right: -50px;
+    right: -40px;
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
   }
 }
 
@@ -170,6 +174,13 @@ ul {
           transform-origin: top center;
   z-index: 10;
 }
+@media (max-width: 800px) {
+  .sec-top-b2 .b-background {
+    -webkit-transform: translateX(-50%) scale(0.4);
+            transform: translateX(-50%) scale(0.4);
+  }
+}
+
 .pailing1-wrap {
   padding: 70px 0 40px;
 }
@@ -253,6 +264,17 @@ ul {
             transform: translateX(0) scale(0.5);
     -webkit-transform-origin: bottom left;
             transform-origin: bottom left;
+  }
+}
+@media (max-width: 704px) and (max-width: 600px) {
+  .res1 .b-window {
+    padding: 0 20px;
+  }
+  .res1 .b-window img {
+    right: 20px;
+  }
+  .res1 .b-window:nth-of-type(2) img {
+    left: 20px;
   }
 }
 
@@ -538,10 +560,14 @@ ul {
 }
 @media (max-width: 748px) {
   .sec-top-c .a-left-image {
-    left: -50px;
+    right: -40px;
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
   }
   .sec-top-c .a-right-image {
-    right: -50px;
+    right: -40px;
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
   }
 }
 
@@ -685,6 +711,13 @@ ul {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+@media (max-width: 748px) {
+  .d-icon {
+    top: -40px;
+    height: 100px;
+    width: 100px;
+  }
+}
 
 .d-top-read {
   text-align: center;
@@ -715,16 +748,25 @@ ul {
     display: inline;
   }
 }
+@media (max-width: 748px) {
+  .d-top-read {
+    padding: 80px 0 20px;
+  }
+}
 
 .slider-inner-wrap {
   height: auto;
   padding-bottom: 64px;
 }
+@media (max-width: 748px) {
+  .slider-inner-wrap {
+    padding-bottom: 50px;
+  }
+}
 
 .sec-top-e {
   position: relative;
   text-align: center;
-  overflow: hidden;
 }
 
 .e-background {
@@ -781,6 +823,11 @@ ul {
 @media (max-width: 900px) and (max-width: 600px) {
   .e-window-wrap {
     width: 330px;
+  }
+}
+@media (max-width: 748px) {
+  .e-window-wrap {
+    padding-bottom: 84px;
   }
 }
 
@@ -858,7 +905,6 @@ ul {
   position: relative;
   text-align: center;
   background-color: #9BE9BB;
-  overflow: hidden;
 }
 
 .f-background {
@@ -873,7 +919,7 @@ ul {
 
 .f-top-read {
   margin-top: -24px;
-  padding: 0 0 59px;
+  padding: 0 0 35px;
 }
 .f-top-read p {
   font-family: "MOBO";

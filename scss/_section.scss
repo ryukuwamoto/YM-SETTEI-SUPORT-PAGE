@@ -32,10 +32,12 @@
     }
     @media (max-width: 748px) {
         .a-left-image {
-            left: -50px;
+            left: -40px;
+            transform: scale(0.45);
         }
         .a-right-image {
-            right: -50px;
+            right: -40px;
+            transform: scale(0.45);
         }
     }
 }
@@ -108,7 +110,7 @@
         transform-origin: top center;
         z-index: 10;
         @media (max-width: 800px) {
-            
+            transform: translateX(-50%) scale(0.40);
         }
     }
 }
@@ -182,6 +184,18 @@
                     left: 30px;
                     transform: translateX(0) scale(0.5);
                     transform-origin: bottom left;
+                }
+            }
+            @media (max-width: 600px) {
+                padding: 0 20px;
+                img {
+                    right: 20px;
+                }
+                &:nth-of-type(2) {
+                    img {
+                       left: 20px; 
+                    }
+                    
                 }
             }
         }
@@ -440,10 +454,12 @@
     }
     @media (max-width: 748px) {
         .a-left-image {
-            left: -50px;
+            right: -40px;
+            transform: scale(0.45);
         }
         .a-right-image {
-            right: -50px;
+            right: -40px;
+            transform: scale(0.45);
         }
     }
 }
@@ -577,6 +593,11 @@
     height: 120px;
     width: 120px;
     transform: translateX(-50%);
+    @media (max-width: 748px){
+        top: -40px;
+        height: 100px;
+        width: 100px;
+    }
 }
 
 .d-top-read {
@@ -605,11 +626,17 @@
             }
         }
     }
+    @media (max-width: 748px) {
+        padding: 80px 0 20px;
+    }
 }
 
 .slider-inner-wrap {
     height: auto;
     padding-bottom: 64px;
+    @media (max-width: 748px) {
+        padding-bottom: 50px;
+    }
 }
 
 
@@ -618,7 +645,6 @@
 .sec-top-e {
     position: relative;
     text-align: center;
-    overflow: hidden;
 }
 
 .e-background {
@@ -665,6 +691,9 @@
     @media (max-width: 600px) {
         width: 330px;
     }
+    }
+    @media (max-width: 748px) {
+        padding-bottom: 84px;
     }
 }
 
@@ -733,7 +762,6 @@
     position: relative;
     text-align: center;
     background-color: #9BE9BB;
-    overflow: hidden;
 }
 
 .f-background {
@@ -747,7 +775,7 @@
 
 .f-top-read {
     margin-top: -24px;
-    padding: 0 0 59px;
+    padding: 0 0 35px;
     p {
         font-family: 'MOBO';
         font-size: 18px;
