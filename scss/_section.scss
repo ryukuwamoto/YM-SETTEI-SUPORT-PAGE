@@ -425,8 +425,9 @@
     width: 390px;
     margin-bottom: 60px;
     @media (max-width: 600px) {
-        height: 94px;
-        width: 340px;
+        height: auto;
+        max-width: 340px;
+        width: 100%;
     }
 }
 

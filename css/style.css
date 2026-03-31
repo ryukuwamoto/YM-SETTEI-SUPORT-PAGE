@@ -530,8 +530,9 @@ ul {
 }
 @media (max-width: 600px) {
   .b-speach-bubble2 {
-    height: 94px;
-    width: 340px;
+    height: auto;
+    max-width: 340px;
+    width: 100%;
   }
 }
 
