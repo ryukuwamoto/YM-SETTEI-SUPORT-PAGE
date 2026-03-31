@@ -560,7 +560,7 @@ ul {
 }
 @media (max-width: 748px) {
   .sec-top-c .a-left-image {
-    right: -40px;
+    left: -40px;
     -webkit-transform: scale(0.45);
             transform: scale(0.45);
   }
