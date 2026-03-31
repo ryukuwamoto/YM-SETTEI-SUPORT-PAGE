@@ -20,10 +20,13 @@
 
   .prev-arrow {
     transform: translateX(calc(-50% - 200px)) rotate(180deg);
+    @media (max-width: 748px) {
+      transform: translateX(calc(-50% - 155px)) rotate(180deg);
+    }
   }
 
   .next-arrow {
-    transform: translateX(calc(-50% + 200px))
+    transform: translateX(calc(-50% + 155px))
   }
 
   .slide, .slick-slide {

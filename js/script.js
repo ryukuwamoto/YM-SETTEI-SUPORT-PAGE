@@ -1,6 +1,6 @@
 $(function () {
   $(".d1-slider").slick({
-    autoplay: false,
+    autoplay: true,
     dots: false,
     centerMode: true,
     prevArrow: '<img src="https://gigaplus.makeshop.jp/yemoba4818/settei-suport/image/sec-top-d/side-arrow.png" class="slide-arrow prev-arrow">',
