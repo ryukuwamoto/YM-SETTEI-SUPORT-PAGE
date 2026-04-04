@@ -38,10 +38,13 @@ Author: Kuwamoto Ryu
   font-display: swap;
 }
 body {
+  overflow-x: hidden;
+}
+
+.sec-top-a, .sec-top-b1, .sec-top-b2, .sec-top-c, .sec-top-d, .sec-top-e, .sec-top-f, .sec-top-g, .sec-top-h {
   font-family: "GenJyuuGothic", sans-serif;
   font-weight: 500;
   color: #000;
-  overflow-x: hidden;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -63,11 +66,19 @@ ul {
   padding: 0 20px;
 }
 
+.sec-top-a img, .sec-top-b1 img, .sec-top-b2 img, .sec-top-c img, .sec-top-d img, .sec-top-e img, .sec-top-f img, .sec-top-g img, .sec-top-h img {
+  max-width: none;
+}
+.sec-top-a p, .sec-top-b1 p, .sec-top-b2 p, .sec-top-c p, .sec-top-d p, .sec-top-e p, .sec-top-f p, .sec-top-g p, .sec-top-h p {
+  line-height: normal;
+}
+
 .sec-top-a {
   position: relative;
   height: auto;
   text-align: center;
   overflow: hidden;
+  border-top: 1px solid #000;
 }
 .sec-top-a .a-left-image {
   position: absolute;
@@ -1038,33 +1049,33 @@ ul {
   line-height: 28px;
 }
 
-.boxs {
+.h-boxs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.boxs .box {
+.h-boxs .h-box {
   width: calc((100% - 20px) / 2);
   margin-right: 20px;
   margin-bottom: 20px;
 }
-.boxs .box:nth-child(2n) {
+.h-boxs .h-box:nth-child(2n) {
   margin-right: 0;
 }
-.boxs .box img {
+.h-boxs .h-box img {
   width: 100%;
   height: auto;
 }
 @media (max-width: 748px) {
-  .boxs {
+  .h-boxs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .boxs .box {
+  .h-boxs .h-box {
     width: 100%;
     margin: 0 0 10px;
   }

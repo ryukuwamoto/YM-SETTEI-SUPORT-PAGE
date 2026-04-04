@@ -24,10 +24,13 @@ $font-path: 'https://gigaplus.makeshop.jp/yemoba4818/YM-articlesaite/font/';
 @include font-face('MOBO', 600, 'MOBO-SemiBold', 'opentype', 'otf');
 
 body {
+    overflow-x: hidden;
+}
+
+.sec-top-a, .sec-top-b1, .sec-top-b2, .sec-top-c, .sec-top-d, .sec-top-e, .sec-top-f, .sec-top-g, .sec-top-h {
     font-family: 'GenJyuuGothic', sans-serif;
     font-weight: 500;
     color: #000;
-    overflow-x: hidden;
     width: 100%;
     margin: 0;
     padding: 0;
