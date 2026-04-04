@@ -28,7 +28,7 @@
   .next-arrow {
     transform: translateX(calc(-50% + 200px));
     @media (max-width: 748px) {
-      transform: translateX(calc(-50% + 155px)) rotate(180deg);
+      transform: translateX(calc(-50% + 155px));
     }
   }
 
